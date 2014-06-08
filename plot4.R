@@ -1,11 +1,10 @@
 #set working directory
-setwd("~/Online Classes/Exploratory Data Analysis/Course Project")
 
 #load library
 library(data.table)
 
 #load data into workspace
-data <- read.table('household_power_consumption.txt', header=T, sep=';')
+data <- read.table('./household_power_consumption.txt', header=T, sep=';')
 
 #subset only Feb 1 and 2
 feb <- data[data$Date == '1/2/2007' | data$Date == '2/2/2007',]
